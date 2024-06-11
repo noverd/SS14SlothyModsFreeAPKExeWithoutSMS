@@ -4,7 +4,7 @@ using Robust.Shared.Console;
 namespace SimpleCommand.Commands;
 
 [AnyCommand] 
-public class CatHelloCommand : IConsoleCommand
+public class SMFAEWSHelloCommand : IConsoleCommand
 {
     private const string Art = """
                                   HELLO BRO! THX FOR USING SMFAEWS!
@@ -16,7 +16,7 @@ public class CatHelloCommand : IConsoleCommand
                                    (_,...'(_,.`__)/'.....+
                                """;
 
-    public string Command => "example.subverter.cathello";
+    public string Command => "smfaews.hello";
     public string Description => "Print Cat-Art in console and chat!";
     public string Help => "HELP!";
 
