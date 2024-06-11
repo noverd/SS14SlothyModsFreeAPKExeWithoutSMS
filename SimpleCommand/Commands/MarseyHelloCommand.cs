@@ -7,6 +7,7 @@ namespace SimpleCommand.Commands;
 public class CatHelloCommand : IConsoleCommand
 {
     private const string Art = """
+                                  HELLO BRO! THX FOR USING SMFAEWS!
                                        |\---/|
                                        | ,_, |
                                    \_`_/-..----.
@@ -21,7 +22,7 @@ public class CatHelloCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        shell.ExecuteCommand($"say {Art}");
+        shell.ExecuteCommand($"""say "{Art}" """);
         shell.WriteLine(Art);
     }
 }
